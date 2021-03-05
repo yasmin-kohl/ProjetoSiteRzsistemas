@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com -->
+    <title>Rz Sitemas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    .<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <style>
+    body {
+        font: 400 15px Lato, sans-serif;
+        line-height: 1.8;
+        color: #818181;
+    }
+    h1 {
+        color: #303030;
+    }
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }  
+  
+    .container-fluid {
+        padding: 60px 50px;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        background-color: rgb(8, 42, 72);
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+    }
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: rgb(8, 42, 72)!important;
+        background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+  
+    .slideanim {visibility:hidden;}
+    .slide {
+        animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+    }
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      } 
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      } 
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .btn-lg {
+          width: 100%;
+          margin-bottom: 35px;
+      }
+    }
+    
+  .dropbtn {
+  background-color: rgb(8, 42, 72);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(8, 42, 72);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+  .dropdown-content a:hover {background-color: rgb(8, 42, 72)}
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+    </style>
+  </head>
+
+    
+  <body id="myPage" data-spy="scroll" data-target=".navbar">
+
+      <div class="container"> 
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#myPage">Logo</a>
+            </div>
+           <div class="collapse navbar-collapse" id="myNavbar">
+            
+             <ul class="nav navbar-nav navbar-right">
+              
+
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">exemplo</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </li>
+              
+              
+          <li><div class="dropdown">
+            <button class="dropbtn">exemplo</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </li>
+        
+            
+          <li><div class="dropdown">
+            <button class="dropbtn">exemplo</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+            </div>
+        </li>
+          
+          
+          <li><div class="dropdown">
+            <button class="dropbtn">exemplo</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+            </div>
+          </li>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group input-group">
+              <input type="text" class="form-control" placeholder="Buscar no Site">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>        
+            </div>
+          </form>
+         </ul>
+         
+            </div>
+          </div>
+        </nav>
+    
+      <img src="IMG/sistema-erp-banner.jpg" class="w3-image w3-greyscale-min" style="width:99%">
+
+
+
+      <div id="services" class="container-fluid text-center">
+      <h1>
+          <strong>Sistemas ERP e Softwares da RZ Sistemas</strong>
+        </h1>
+        <div class="medium-12 medium-centered columns">
+          <p class="text-justify" style="font-size: 25px ">Desde 1998 desenvolvemos os melhores sistemas para diversos segmentos empresariais, conheça nossos sistemas ERP para gestão de produção, rede de lojas, confecções, industria Têxtil e distribuidoras, alem das melhores opções em CAD e plotters para Confecção</p>
+        </div>
+        <br> 
+        <br>
+
+
+        
+        <div class="row slideanim">
+        
+          <div class="col-sm-4">  <img src="IMG/erp-para-confeccao-icon.svg"></img> 
+            <h4> Erp para Confecção</h4>
+            <p class="text-justify">Nosso Erp para Confecção ajuda grandes confecções no Brasil a serem mais eficientes e rentáveis, veja como sua confecção pode ser ágil e eficiente, controle sua empresa desde a formação do preço de venda, entrada de pedidos , monitore todos os processos para elaboração da peça final como corte, enfesto, facções e expedição.</p>
+          </div>  
+
+          <div class="col-sm-4">
+            <img src="IMG/erp-rede-de-lojas-icon.svg"></img> 
+          <h4>Erp para Lojas</h4>
+          <p class="text-justify">Nosso sistema ERP é ideal para lojas que exigem controle e praticidade, permite o controle de varias lojas permitindo separar estoque por filial, controlar movimento financeiro consolidado ou separado por loja de maneira pratica e eficiente, é possível fazer integração com fabricas, funciona na Nuvem ou local</p>
+          </div>
+        
+          <div class="col-sm-4">
+            <img src="IMG/sistema-para-distribuidoras-icon.svg"></img> 
+            <h4>Sistema para Distribuidora</h4>
+            <p class="text-justify">>Nosso sistema ERP para distribuidoras fornece soluções práticas para gestão diária de uma distribuidora, como automação da digitação de pedidos, controle financeiro, rotas de entrega, controle financeiro total, gestão do estoque, automação do faturamento, alem dos complicados cálculos de ICMS substituto. </p>
+            </div>
+        </div>
+      
+        <br><hr> <br>
+      
+        <div class="row slideanim">
+          <div class="col-sm-4">
+          <img src="IMG/cad-para-confeccao-icon.svg"></img> 
+          <h4>CAD para Confecção</h4>
+           <p class="text-justify">RZ CAD Têxtil é o CAD para confecção ideal, tem a melhor relação custo benefício do mercado, possui praticamente todas as funções dos Softwares concorrentes como Audaces Vestuário, Lectra e Gerber, por um preço mais acessível, além disso ele é desenvolvido 100% no Brasil.</p>
+          </div>
+      
+            <div class="col-sm-4">
+             <img src="IMG/plotter-para-confeccao-icon.svg"></img> 
+             <h4>Plotter para Confecção</h4>
+              <p class="text-justify">A RZ Sistemas fornece Plotters para confecção, a linha Rz Textil Jet compatível com Rz CAD, Audaces, Optitex, Lectra, Gerber, temos diversos modelos com velocidades e tamanhos diferentes. A linha Rz Têxtil Jet BR possui modelos com cabeças de impressão de: 120cm, 160cm, 185cm e 220cm </p>
+           </div>
+        
+          <div class="col-sm-4">
+            <img src="IMG/venda-a-pronta-entrega-icon.svg"></img> 
+            <h4>Venda a Pronta Entrega</h4>
+            <p class="text-justify">Vender a pronta entrega requer mais que apenas um solução eficiente de força de vendas, requer a gerencia de todo o processo para controle de estoque, geração de notas fiscais de transferência e devolução dos caminhões ou vendedores, alem da emissão da nota fiscal para o cliente final.</p>
+          </div>
+
+          </div>
+       </div>
+          
+     </div>
+  </div>
+
+    
+      <div id="contact" class="container-fluid bg-grey">
+       
+        <hr>
+        <h2>CONTATO</h2> 
+        <div class="row">
+          <div class="col-sm-5">
+           
+            <p><span class="glyphicon glyphicon-map-marker"></span>Blumenau-sc</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +55 (47) 3332-9066</p>
+         
+          </div>
+          <div class="col-sm-7 slideanim">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <h2>POSTS</h2> 
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+        
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        });
+        
+        // Slide in elements on scroll
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                $(this).addClass("slide");
+              }
+          });
+        });
+      })
+      </script>
+
+  </body>
+</html>
